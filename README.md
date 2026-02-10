@@ -2,6 +2,8 @@
 
 RAG Over Audio is a small pipeline that transcribes an audio file, stores transcript chunks in a Chroma vector database, and answers questions by retrieving relevant chunks and prompting a local LLM (Ollama).
 
+<img src="/images/assembly-audio-rag.gif" alt="description" style="width:100%; height:auto;" />
+
 ## Features
 
 - Whisper-based transcription for audio files
@@ -57,3 +59,4 @@ You will be prompted to enter a question about the audio after transcription and
 - The query step calls the Ollama API at http://localhost:11434/api/generate.
 - The default LLM model name in query.py is mistral. Change it if your local model name differs.
 - Transcription model defaults to Whisper base. You can change model_name in transcribe.py.
+
